@@ -1,9 +1,9 @@
-// Cristiano | ICS2O-Unit0-00-HTML | Date 2022
+// Cristiano | ICS2O-Assignment2-HTML | March 11 2022
 
 
 /**
- * Alerts "Hello, World!"
+ * Calculates area for a rectangle.
  */
-function onButtonClick() {
-  alert("Hello, World!")
+function calculateArea(elementid, length, width) {
+  document.getElementById(elementid).innerHTML = "<p>The area of this rectangle is " + (length * width) + "cm²</p>" 
 }
