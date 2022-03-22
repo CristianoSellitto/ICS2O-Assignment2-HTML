@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Area of a rectangle</title>
+    <title>Area of a triangle</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -23,7 +23,7 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout__title">Area of a rectangle</span>
+          <span class="mdl-layout__title">Area of a triangle</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="./">Index</a>
@@ -34,24 +34,48 @@
     <br>
     <br>
     <br>
-    <h1>Areas of Rectangles</h1>
-    <!-- Rectangle 1 Text -->
-    <div id="rectangle1">
-      <p>Rectangle's #1's length is 5cm, and the width is 3cm.</p>
+    <h1>Areas of Triangles</h1>
+    <!-- Triangle 1 Text -->
+    <div id="triangle1">
+      <p>Triangle's #1's length is 5cm, and the width is 3cm.</p>
     </div>
-    <div id="rectangle1answer"></div>
-    <!-- Calculate button for Rectangle 1 -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateArea('rectangle1answer', 5, 3)">
+    <div id="triangle1answer"></div>
+    <!-- Calculate button for Triangle 1 -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateArea('triangle1answer', 5, 3)">
       Calculate Area
     </button>
-    
-    <!-- Rectangle 2 Text -->
-    <div id="rectangle2">
-      <p>Rectangle's #2's length is 13cm, and the width is 25cm.</p>
+    <!-- Triangle 2 Text -->
+    <div id="triangle2">
+      <p>Triangle's #2's length is 13cm, and the width is 25cm.</p>
     </div>
-    <div id="rectangle2answer"></div>
-    <!-- Calculate button for Rectangle 2 -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateArea('rectangle2answer', 13, 25)">
+    <div id="triangle2answer"></div>
+    <!-- Calculate button for Triangle 2 -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateArea('triangle2answer', 13, 25)">
+      Calculate Area
+    </button>
+    <!-- Triangle 3 Text -->
+    <div id="triangle3">
+      <p>Choose the length and width of Triangle #3:</p>
+      <!-- Length Textfield -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthcustom">
+          <label class="mdl-textfield__label" for="lengthcustom">Length</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+      </form>
+      <!-- Width Textfield -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="widthcustom">
+          <label class="mdl-textfield__label" for="widthcustom">Width</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+      </form>
+    </div>
+    <div id="triangle3answer"></div>
+    <!-- Calculate button for Triangle 3 -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculateArea('triangle3answer')">
       Calculate Area
     </button>
   </body>
