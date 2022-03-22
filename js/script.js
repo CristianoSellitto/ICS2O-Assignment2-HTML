@@ -2,7 +2,6 @@
 // ICS2O-Assignment2-HTML
 // March 11 2022
 
-
 /**
  * Calculates area for a triangle.
  */
