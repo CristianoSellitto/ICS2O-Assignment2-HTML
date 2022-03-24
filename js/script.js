@@ -5,12 +5,12 @@
 /**
  * Calculates area for a triangle.
  */
-function calculateArea(elementid, length, width) {
+function calculateArea(elementid, base, height) {
   if (elementid != "triangle3answer") {
-    document.getElementById(elementid).innerHTML = "<p>The area of this triangle is " + (length * width / 2) + "cm²</p>" 
+    document.getElementById(elementid).innerHTML = "<p>The area of this triangle is " + (base * height / 2) + "cm²</p>" 
   } else {
-    const lengthcustom = parseInt(document.getElementById("lengthcustom").value)
-    const widthcustom = parseInt(document.getElementById("widthcustom").value)
-    document.getElementById(elementid).innerHTML = "<p>The area of this triangle is " + (lengthcustom * widthcustom / 2) + "cm²</p>" 
+    const basecustom = parseInt(document.getElementById("basecustom").value)
+    const heightcustom = parseInt(document.getElementById("heightcustom").value)
+    document.getElementById(elementid).innerHTML = "<p>The area of this triangle is " + (basecustom * heightcustom / 2) + "cm²</p>" 
   }
 }

@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Area of a triangle</title>
+    <title>Area of Triangles</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -23,7 +23,7 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout__title">Area of a triangle</span>
+          <span class="mdl-layout__title">Area of Triangles</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="./">Index</a>
@@ -34,10 +34,11 @@
     <br>
     <br>
     <br>
-    <h1>Areas of Triangles</h1>
+    <h1>Area of a Triangle Formula:</h1>
+    <h2>A = b × h ÷ 2</h2>
     <!-- Triangle 1 Text -->
     <div id="triangle1">
-      <p>Triangle's #1's length is 5cm, and the width is 3cm.</p>
+      <p>Triangle's #1's base is 5cm, and the height is 3cm.</p>
     </div>
     <div id="triangle1answer"></div>
     <!-- Calculate button for Triangle 1 -->
@@ -46,7 +47,7 @@
     </button>
     <!-- Triangle 2 Text -->
     <div id="triangle2">
-      <p>Triangle's #2's length is 13cm, and the width is 25cm.</p>
+      <p>Triangle's #2's base is 13cm, and the height is 25cm.</p>
     </div>
     <div id="triangle2answer"></div>
     <!-- Calculate button for Triangle 2 -->
@@ -55,20 +56,20 @@
     </button>
     <!-- Triangle 3 Text -->
     <div id="triangle3">
-      <p>Choose the length and width of Triangle #3:</p>
-      <!-- Length Textfield -->
+      <p>Input the base and height of Triangle #3:</p>
+      <!-- Base Textfield -->
       <form action="#">
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthcustom">
-          <label class="mdl-textfield__label" for="lengthcustom">Length</label>
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="basecustom">
+          <label class="mdl-textfield__label" for="basecustom">Base</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
       </form>
-      <!-- Width Textfield -->
+      <!-- Height Textfield -->
       <form action="#">
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="widthcustom">
-          <label class="mdl-textfield__label" for="widthcustom">Width</label>
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="heightcustom">
+          <label class="mdl-textfield__label" for="heightcustom">Width</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
       </form>
